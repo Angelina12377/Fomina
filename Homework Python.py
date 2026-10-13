@@ -1,18 +1,15 @@
 #Задача 1
-from venv import create
-
 number  = 42
 number_str = str(number)
-text = "The answer is "
+text = "The answer is: "
 
 result = text + number_str
 
 #Результаты
-print(number)
-print(number_str)
-print(type(number_str))
-print(text)
-print(result)
+print(number,type(number))
+print(number_str,type(number_str))
+print(text,type(text))
+print(result,type(result))
 
 #Задача 2
 name = "Ангелина"
@@ -54,7 +51,7 @@ person = {
 
  }
 person["address"]["city"] = "Санкт-Петербург"
-person["address"]["zipcode"] = "333777"
+person["address"]["postal_code"] = "333777"
 print(person)
 del person["address"]["city"]
 print(person)
